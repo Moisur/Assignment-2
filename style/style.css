@@ -120,7 +120,42 @@ body{
     width: 100px;
     margin: 0px 30px;
 }
+/* crad css */
+#container-mein{
+    width: 80%;
+    margin: auto;
+}
+.buy-now{
+    margin-top: 40px;
+}
+.buy-now .populer{
+    text-align: center;
+    font-size: 40px;
+    font-family: 600px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.crad-are{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+}
 
+.crad{
+    padding: 20px;
+    width: 350px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 10px 10px 60px rgba(61, 45, 45, 0.6);
+    
+}
+.crad-logo img{
+    width: 100%;
+}
+.star-area img{
+    width: 12px;
+}
 /* mein-are end  */
 
 /* header are responsive strad */

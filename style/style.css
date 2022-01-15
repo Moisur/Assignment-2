@@ -19,7 +19,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .header-logo h2{
     cursor: pointer;
@@ -116,22 +115,24 @@ body{
 }
 /* Comphony area  */
 .comphony-logo{
-    margin: 80px;
+    margin: 70px;
     border-top: 5px solid #F7F0FF;
     border-bottom: 5px solid #F7F0FF;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
 }
 .comphony-logo img{
-    width: 100px;
-    margin: 0px 30px;
+    width: 80px;
+    margin: 0px 20px;
 }
 /* crad css */
 #container-mein{
     width: 80%;
     margin: auto;
+    padding: 20px;
 }
 .buy-now{
     margin-top: 40px;
@@ -147,17 +148,15 @@ body{
 .crad-are{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 30px;
     justify-content: center;
 }
-
 .crad{
-    padding: 20px;
-    width: 320px;
+    padding: 10px;
+    width: 310px;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 10px 10px 60px rgba(61, 45, 45, 0.6);
-    
+    box-shadow: 10px 10px 60px rgba(61, 45, 45, 0.6); 
 }
 .crad-logo img{
     width: 100%;
@@ -241,7 +240,6 @@ body{
 /* mein-are end  */
 /* footer area strad  */
 .footer-contiber{
-    width: 100%;
     height: 300px;
     background-color: #0A0826;
     display: flex;
@@ -264,18 +262,58 @@ body{
     margin: 0px 6px;
 }
 /* footer area end  */
-/* header are responsive strad */
-@media (max-width:900px){
-    #container{
-        width: 100%;
-        margin: auto;
+
+/* responsive area  */
+@media (max-width:1117px){
+   .navigeson ul li{
+        margin: 10px;
+        padding: 2px;
     }
-   .header-logo h2{
-       font-size: 17px;
-       font-weight: bold;
-   }
+    .icon-area{
+        padding: 10px;
+    }
+    .comphony-logo{
+        border: none;
+    }
+    .comphony-logo img{
+        width: 70px;
+        padding: 20px 0; 
+    }
+    .main-text{
+        width: 400px;
+    }
+    .main-logo{
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 50px;
+        height: 300px;
+    }
+    .logo-bacekground{
+        width: 200px;
+        height: 200px;
+    }
+    .cameralogo{
+        width: 280px;
+        position:relative;
+        left: -50px;
+        top: -30px;
+    }
 }
-@media (max-width:700px){
+@media (max-width:1117px){
+    .crad-are{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    /* #crad-problem{
+        margin-left: 50%;
+    } */
+    .seemore{
+        padding: 20px 0;
+        justify-content: center;
+    }
+}
+@media (max-width:885px){
     .navigeson{
         display: none;
     }
@@ -284,7 +322,7 @@ body{
         font-size: 20px;
     }
     .header-logo h2{
-        margin-left: 50px;
+        margin: auto;
     }
     .icon-area{
         display: block;
@@ -292,8 +330,98 @@ body{
     .menuicon{
         display: block;
         position: absolute;
-        padding: 20px;
-
+         padding: 20px;
+    }
+    .main-header-are{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .main-text{
+        order: 2;
+        margin-top: 0;
+        margin:auto;
+    }
+    .main-logo{
+        margin: auto;
+        margin-top: 20px;    
+    }
+    .main-text h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .main-text p{
+        font-size: 16px;
+        font-weight: 600;
     }
 }
-/* header are responsive end */
+/* Mobile respon sive mobile  */
+@media (max-width:670px){
+    .crad-are{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        /* justify-content: center;
+        align-items: center; */
+        grid-auto-columns: auto;
+    }
+    .main-logo{
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 80px;
+        height: 200px;
+    }
+    .logo-bacekground{
+        width: 150px;
+        height: 150px;
+    }
+    .cameralogo{
+        width: 180px;
+        position:relative;
+        left: -20px;
+        top: -10px;
+    }
+    .main-text{
+        width:300px;
+        margin:auto;
+    }
+    .header-style{
+        justify-content: space-around;
+    }
+    .menuicon{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size:25px;
+        margin-right: 10px;
+    }
+    .header-logo h2{
+      margin-left: 10px;
+    }
+    .comphony-logo{
+        margin: 0;
+        padding: 0;
+    } 
+    .buy-now .populer{
+        font-size: 30px;
+    }
+} 
+ @media (max-width:450px){
+    .crad{
+        margin-left:0;
+    }
+    #crad-problem{
+        margin-left:0;
+    }
+     .header-logo h2{
+        font-size: 16px;
+    }
+    .main-logo{
+        margin-top: 50px;
+        margin-left: 60px;  
+    }
+    .seemore{
+        padding: 20px 0;
+        justify-content: flex-end;
+    }
+}  

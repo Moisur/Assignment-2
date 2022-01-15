@@ -299,7 +299,7 @@ body{
         top: -30px;
     }
 }
-@media (max-width:1117px){
+@media (max-width:1017px){
     .crad-are{
         display: grid;
         grid-template-columns: repeat(2, 1fr);

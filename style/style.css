@@ -59,6 +59,10 @@ body{
     margin-top: 100px;
     padding: 10px 0;
 }
+.main-text:hover{
+    transform: scale(1.1);
+    transition: 2s ease-in-out;
+}
 .main-text h1{
     font-size: 40px;
     font-weight: 600;
@@ -76,6 +80,10 @@ body{
     background-color: #E02C6D;
     color: white;
     border-radius: 30px;
+}
+.main-logo:hover{
+    transform: scale(1.1);
+    transition: 2s ease-in-out;
 }
 .fast-botton small{
     margin-left: 30px;
@@ -174,19 +182,88 @@ body{
     font-size: 15px;
     color: rgb(98, 98, 98);
 }
+/* see more aew  */
 .seemore{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-top: 20px;
     color: #E02C6D;
+    cursor: pointer;
 }
 .seemore small{
     font-weight: 600;
     margin-right: 10px;
 }
+/* join-are  */
+.join-are{
+    width: 100%;
+    height: 150px;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.join-now{
+   width: 350px;
+}
+.join-now input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    outline: 0;
+    border: 3px solid #E02C6D;
+    margin-bottom: 10px;
+}
+.join-icon{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #E02C6D;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.join-icon button{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+.join-icon i{
+    margin-left: 10px;
+}
 /* mein-are end  */
-
+/* footer area strad  */
+.footer-contiber{
+    width: 100%;
+    height: 300px;
+    background-color: #0A0826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-are{
+    text-align: center;
+    color: white;
+}
+.footer-text h2{
+    padding: 8px;
+    font-size: 14px;
+    color: rgba(245, 245, 245, 0.648);
+}
+.footer-logo-area i{
+    padding: 10px;
+    background-color: #554e4e5f;
+    border-radius: 50%;
+    margin: 0px 6px;
+}
+/* footer area end  */
 /* header are responsive strad */
 @media (max-width:900px){
     #container{
